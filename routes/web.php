@@ -17,8 +17,8 @@ use App\Http\Controllers\TimeTableController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
 
 Route::resource('subjects', SubjectController::class)->except('edit', 'update', 'delete');
 Route::resource('faculties', FacultyController::class)->except('edit', 'update', 'delete');
