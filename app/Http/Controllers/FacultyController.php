@@ -12,20 +12,22 @@ class FacultyController extends Controller
       return view('pages.faculties.create');
     }
 
+    public function index()
+    {
+      $faculties = Faculty::all();
+      return view('pages.faculties.index', compact('faculties'));
+    }
+
     public function store()
     {
       $data = request()->validate([
-          'name' => 'string|required|max:199|min:1',
-          'email' => 'required|email'
+        'name' => 'string|required|max:200|min:1',
+        'email' => 'string|required|email|max:255'
       ]);
       unset($data['_token']);
       Faculty::create($data);
       return redirect()->route('faculties.index');
     }
 
-    public function index()
-    {
-      $faculties = Faculty::all();
-      return view('pages.faculties.index', compact('faculties'));
-    }
+    
 }

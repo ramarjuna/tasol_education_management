@@ -34,5 +34,5 @@
 @stop
 
 @section('scripts')
-<script src="{{ asset('/js/subjects.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/js/common.js') }}" type="text/javascript"></script>
 @stop
