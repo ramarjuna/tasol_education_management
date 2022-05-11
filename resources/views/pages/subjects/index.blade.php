@@ -2,19 +2,17 @@
 
 @section('content')
 <div class="container p-6">
-  <div class="card col-6 p-6">
-    <div class="card-header d-flex justify-content-between">
-      <h4>
-        Subjects
-      </h4>
-      <div class="">
-        <a href="{{ route('subjects.create') }}" class="btn btn-primary">New Subject</a>
+  <div class="card col-12">
+    <div class="card-header d-flex justify-content-between bg-dark bg-gradient">
+      <h4 class="py-3 text-white">Subjects</h4>
+      <div>
+        <a href="{{ route('subjects.create') }}" class="btn btn-primary py-3">New Subject</a>
       </div>
     </div>
     <div class="card-body">
-      <table class="table">
+      <table class="table table-striped">
         <thead>
-          <th>Sno</th>
+          <th>S No.</th>
           <th>Subject</th>
           <th>Term</th>
         </thead>

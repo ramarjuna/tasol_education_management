@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container p-6">
-  <div class="card col-6 p-6">
+  <div class="card col-12 p-5">
     <div class="card-header d-flex justify-content-between">
       <h4>
         Faculties

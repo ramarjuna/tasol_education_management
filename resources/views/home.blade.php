@@ -2,7 +2,7 @@
 @section('content')
 <div class="container p-5">
   <div class="card col-12">
-    <div class="card-header bg-dark text-white h1">
+    <div class="card-header bg-dark bg-gradient text-white h1">
       Dashboard
     </div>
     <div class="card-body">
