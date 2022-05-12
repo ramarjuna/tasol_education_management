@@ -1,8 +1,5 @@
 function setSessionStartTime(duration=null){
     if(duration != null){
-        stopSessionEl = $("#session_stop_time");
-        startSessionEl = $("#session_start_time");
-        stopSessionTime = $("#session_stop_time").val();
         startSession = $("#session_start_time").val();
         if (startSession !== "") {
           var startSessionHours = startSession.split(":")[0];
@@ -20,10 +17,14 @@ function setSessionStartTime(duration=null){
     }
 }
 
-    function setSessionStopTime(){
-      var duration = $('#duration').val();
-      var result = setSessionStartTime(duration)
-      setSessionStopTimeValue(result);
+function setSessionStopTime() {
+  startSession = $("#session_start_time").val();
+  document.getElementById("session_stop_time").disabled = true;
+  if (startSession) {
+    var duration = $('#duration').val();
+    var result = setSessionStartTime(duration)
+    setSessionStopTimeValue(result);
+  }
     }
 
     function setSessionStopTimeValue(time){
