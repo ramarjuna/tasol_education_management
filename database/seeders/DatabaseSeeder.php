@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Database\Seeders\SubjectSeeder;
 use Database\Seeders\FacultySeeder;
+use Database\Seeders\TimeTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,7 +17,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-      $this->call(FacultySeeder::class);
-      $this->call(SubjectSeeder::class);
+      // $this->call(FacultySeeder::class);
+      // $this->call(SubjectSeeder::class);
+      $this->call(TimeTableSeeder::class);
     }
 }
