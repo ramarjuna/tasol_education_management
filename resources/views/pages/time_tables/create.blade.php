@@ -8,7 +8,6 @@
     @if(session('message'))
     <div class="alert alert-success alert-dismissible">
       <strong>Success!</strong> {{session('message')}}.
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     </div>
     @endif
     <!-- end::Alert Message -->
